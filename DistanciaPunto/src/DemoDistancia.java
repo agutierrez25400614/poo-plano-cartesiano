@@ -18,7 +18,16 @@ public class DemoDistancia {
         System.out.println(puntoB); // B(-2,6)
         System.out.println(puntoC); // C(0,0)
         System.out.println(puntoD); // D(4,4)
+// Subtema 2.2 — Instanciación de Distancia pasando objetos Punto
+// El constructor de Distancia recibe dos objetos Punto como argumentos
+        Distancia d1 = new Distancia(puntoA, puntoB);
+        Distancia d2 = new Distancia(puntoC, puntoD);
+// Subtema 2.4 — Invocación de métodos y recepción de retorno
+        System.out.println("\n--- Cálculo de distancias ---");
+        System.out.println(d1); // toString()
+        System.out.println(d2);
+        System.out.printf("Valor numérico d1: %.4f%n", d1.getDistancia());
+        System.out.printf("Valor numérico d2: %.4f%n", d2.getDistancia());
 
-    
-}
     }
+}
